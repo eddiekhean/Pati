@@ -1,0 +1,201 @@
+/* FAQ Section Component
+.product_judge-outer.faq-section {
+    padding: 56px 0;
+}
+
+
+.product-section_title {
+    font-size: 32px;
+    line-height: 1.3em;
+    margin: 16px 0;
+    font-weight: 400;
+    font-family: Lora, serif;
+}
+
+.centered {
+    text-align: center;
+}
+
+.product_faq_container {
+    max-width: 824px;
+    margin: auto;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #fff, #f7a0a0bf);
+    overflow: hidden;
+    padding: 32px;
+}
+
+.product_faq-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.product_faq-thumb p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.product_faq-box.active .product_faq-thumb svg {
+    transform: rotate(180deg);
+}
+
+.product_faq-thumb svg {
+    width: 16px;
+    transition: all 0.2s;
+}
+
+.product_faq-content p {
+    margin: 0 0 12px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.product_faq-content p:last-child {
+    margin-bottom: 0;
+}
+
+.product_faq-content {
+    padding-top: 16px;
+    display: none;
+}
+
+.product_faq-box {
+    padding: 20px 24px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.btn_container {
+    margin-top: 24px;
+}
+
+.product_primary-btn {
+    font-family: Nunito, sans-serif;
+    display: inline-block;
+    padding: 18px 80px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: all 0.2s;
+    line-height: 1.3em;
+}
+
+.product_primary-btn:hover {
+    opacity: 0.7;
+}
+
+.product_primary-btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 16px 0 0;
+}
+
+.product_primary-btn-footer img {
+    width: 24px !important;
+}
+
+@media only screen and (max-width: 678px) {
+    .product_judge-outer.faq-section {
+        padding: 32px 0;
+    }
+
+    .product-section_title {
+        font-size: 24px;
+    }
+
+    .product_faq_container {
+        padding: 16px;
+    }
+
+    .product_faq-box {
+        padding: 16px 0;
+    }
+
+    .product_faq-thumb p,
+    .product_faq-content p {
+        font-size: 16px;
+    }
+
+    .product_primary-btn {
+        display: block;
+        padding: 16px;
+        font-size: 16px;
+    }
+} */
+/* Consolidated FAQ Component Styles */
+.product_faq_container {
+    max-width: 824px;
+    margin: auto;
+    border-radius: 16px;
+    /* Consolidating background: using the "Lymph" one which seems correct for this page */
+    background: linear-gradient(180deg, #fff, #f3eee0);
+    overflow: hidden;
+    padding: 32px;
+}
+
+.product_faq-box {
+    padding: 20px 24px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.product_faq-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.product_faq-thumb p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.product_faq-thumb svg {
+    width: 16px;
+    transition: all .2s;
+}
+
+/* Toggle state class */
+.active .product_faq-thumb svg {
+    transform: rotate(180deg);
+}
+
+.product_faq-content {
+    padding-top: 16px;
+    display: none;
+}
+
+.product_faq-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+@media only screen and (max-width: 678px) {
+    .product_faq_container {
+        padding: 16px;
+    }
+
+    .product_faq-box {
+        padding: 16px 0;
+    }
+
+    .product_faq-thumb p {
+        font-size: 18px;
+    }
+
+    .product_faq-content p {
+        font-size: 16px;
+    }
+}

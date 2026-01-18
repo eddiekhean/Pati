@@ -1,0 +1,87 @@
+/* Press Logos Component Styles */
+
+.section_holder {
+    position: relative;
+    max-width: 100vw;
+    margin: auto;
+    line-height: 1;
+    background: #fff7f8;
+}
+
+.section_press_logos_outer {
+    position: relative;
+    margin: auto;
+}
+
+.press-logos-container {
+    position: relative;
+    max-width: 100vw;
+    margin: auto;
+    line-height: 0;
+}
+
+.section_holder .press_logos_wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+    display: grid;
+    margin: auto;
+    grid-gap: 20px 70px;
+    align-items: center;
+    background: #f3eee0 !important;
+}
+
+.section_holder .press_logos_wrapper .h3 {
+    font-size: 24px;
+    letter-spacing: normal;
+    color: black;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .press-logos-title {
+        font-size: 18px;
+    }
+}
+
+.press-logos-carousel {
+    width: 100%;
+    overflow: hidden;
+    min-width: 1px;
+}
+
+.press-logos-track {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: logo-scroll 60s linear infinite;
+}
+
+.press-logo {
+    height: 30px;
+    width: auto;
+    display: block;
+    margin: 0 50px;
+}
+
+@media (max-width: 900px) {
+    .press-logo {
+        max-height: 20px;
+        margin: 0 25px;
+    }
+}
+
+/* Keyframe Animation */
+@keyframes logo-scroll {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-50%);
+    }
+}

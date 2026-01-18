@@ -1,0 +1,19 @@
+/* Header Component Styles */
+
+.site-header {
+    width: 100%;
+}
+
+.site-header__container {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    max-height: 67.73px;
+}
+
+.site-header__logo {
+    display: block;
+    max-width: 160px;
+    margin: 0 auto;
+    min-height: 43.73px;
+}

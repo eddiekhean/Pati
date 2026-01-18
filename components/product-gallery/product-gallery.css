@@ -1,0 +1,86 @@
+/* Product Gallery Component Styles */
+
+.product-gallery {
+    width: 100%;
+}
+
+/* Hero Section */
+.product-gallery__hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main-product-left img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Nutritional Info Badge */
+.product-gallery__info-badge {
+    position: absolute;
+    bottom: 32px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    line-height: 1.2em;
+    max-width: 290px;
+    padding: 8px 24px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #000;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.product-gallery__info-badge-icon,
+.product-gallery__info-badge-text {
+    display: flex;
+    align-items: center;
+}
+
+/* Allow icons to use their own sizing */
+.product-gallery__info-badge img {
+    display: inline-block;
+}
+
+/* Sale Badge */
+.product-gallery__sale-badge {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 100%;
+    max-width: 80px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .product-gallery__sale-badge {
+        max-width: 120px;
+    }
+}
+
+/* Product Grids */
+.product-gallery__grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.product-gallery__grid--2col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-gallery__grid--3col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Ensure all images in grids are full width */
+.product-gallery__grid img {
+    max-width: 306.992px;
+}

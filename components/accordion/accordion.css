@@ -1,0 +1,92 @@
+/* Accordion Component Styles */
+
+.product_tab-block_out {
+    margin-top: 16px;
+}
+
+/* Accordion Item */
+.accordion-item {
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 32px;
+    border: 1px solid #d2d2d2;
+    cursor: pointer;
+    transition: border-color 200ms ease;
+}
+
+.accordion-item.active {
+    border-color: #d5416e;
+}
+
+/* Accordion Header (Button) */
+.accordion-item__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+}
+
+.accordion-item__header p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+/* Accordion Icon */
+.accordion-icon {
+    width: 24px;
+    display: block;
+    transition: transform 200ms ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(45deg);
+}
+
+/* Accordion Content */
+.accordion-item__content {
+    padding-top: 16px;
+    display: none;
+}
+
+.accordion-item.active .accordion-item__content {
+    display: block;
+}
+
+/* Content Styling */
+.accordion-item__content p {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.3em;
+    letter-spacing: normal;
+}
+
+.accordion-item__content p:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-item__content ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+    margin-bottom: 12px;
+}
+
+.accordion-item__content ul:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-item__content li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.accordion-item__content li:last-child {
+    margin-bottom: 0;
+}

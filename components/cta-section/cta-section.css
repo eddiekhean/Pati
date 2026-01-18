@@ -1,0 +1,167 @@
+/* CTA Section Component Styles */
+
+.cta-section {
+    margin-top: 0;
+}
+
+/* Delivery Estimate */
+.delivery-estimate {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.delivery-date {
+    background-color: #039869;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .delivery-date {
+        padding: 4px;
+    }
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 12px;
+    transition: opacity 200ms ease;
+}
+
+.add-to-cart-button:hover {
+    opacity: 0.8;
+}
+
+/* Trust Badges */
+.trust-badges-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.trust-badge-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trust-badge-inline:first-child {
+    padding-right: 16px;
+    border-right: 1px solid black;
+}
+
+/* Payment & Note Images */
+.payment-icons,
+.product-note-image {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+}
+
+/* Trust Icons List */
+.trust-icons-list {
+    margin-top: 16px;
+}
+
+.trust-icon-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.trust-icon-item img {
+    width: 100%;
+}
+
+/* Customer Review Card */
+.customer-review-card {
+    margin-top: 24px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #f3eee0;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.review-stars img {
+    display: block;
+    max-width: 100px;
+    margin-top: 6px;
+}
+
+.review-header p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    line-height: 1.3em 20.8px;
+    font-size: 16px;
+    letter-spacing: 0;
+
+}
+
+.review-header p:last-child {
+    margin-bottom: 0;
+}
+
+.review-header .p .strong {
+    font-weight: 600;
+    line-height: 1.3em;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.review-header img {
+    max-width: 120px;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.review-header-text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.review-header .review-stars {
+    display: block;
+    max-width: 100px;
+    margin-top: 6px;
+}
+
+.review-content p {
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.3em;
+    font-size: 16px;
+}
+
+.review-content p:last-child {
+    margin-bottom: 0;
+}

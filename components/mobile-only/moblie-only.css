@@ -1,0 +1,72 @@
+/* Consolidated Product Image Display Component Styles */
+
+/* Carousel & Image Styles */
+.main_product-images img {
+    object-fit: cover;
+    aspect-ratio: 1;
+    /* Ensures square aspect ratio */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main_product-image-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* Thumbs Specifics */
+.main_product-image-carousel_thumbs .slick-slide {
+    padding: 0 4px;
+}
+
+/* Nutrition Info Overlay */
+.main_product-nutrition-info {
+    position: absolute;
+    bottom: 32px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    line-height: 1.2em;
+    max-width: 290px;
+    padding: 8px 24px;
+    background: #ffffffd9;
+    /* Slight transparency */
+    border: 1px solid black;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.main_product-nutrition-info span {
+    display: flex;
+    align-items: center;
+}
+
+.main_product-nutrition-info img {
+    width: 24px;
+}
+
+/* Badges */
+.main-producT_bf_badge {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 100%;
+    max-width: 120px;
+    display: block;
+}
+
+/* Responsive Utilities */
+@media only screen and (min-width: 679px) {
+    .Mobile_only {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    .main-producT_bf_badge {
+        max-width: 80px;
+    }
+}

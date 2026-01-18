@@ -1,0 +1,148 @@
+/* Hidden Drainage System Component Styles */
+
+/* Desktop display - hide mobile elements */
+@media only screen and (min-width: 679px) {
+    .pli_outer .Mobile_only {
+        display: none !important;
+    }
+}
+
+/* Mobile display - hide desktop elements */
+@media only screen and (max-width: 678px) {
+    .pli_outer .Desktop_only {
+        display: none !important;
+    }
+}
+
+/* Outer container */
+.product_judge-outer.pli_outer {
+    padding: 56px 0;
+}
+
+/* Container for centered content */
+.product_judge-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.product_judge-container.top_padding {
+    margin-bottom: 40px;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+/* Section title */
+.product-section_title {
+    font-size: 32px;
+    line-height: 1.3em;
+    margin: 16px 0;
+    font-weight: 400;
+    font-family: Lora, serif;
+}
+
+.product-section_title span {
+    color: #d5416e;
+}
+
+/* Flex layout for content and image */
+.pli_flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.pli_flex>div {
+    width: 100%;
+}
+
+.pli_flex img {
+    display: block;
+    width: 100%;
+}
+
+/* Text sections */
+.pli_top-text *,
+.pli_pink-text *,
+.pli_bottom-text * {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 8px 0;
+}
+
+/* Top text section with green checkmarks */
+.pli_top-text ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.pli_top-text li {
+    padding-left: 32px;
+    color: #0c7c00;
+    background-image: url(../images/check-mark_17013456_2_1.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    list-style: none;
+    font-weight: 600;
+    font-family: Nunito, sans-serif;
+}
+
+/* Pink highlighted section */
+.pli_pink-text {
+    margin: 24px 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #ffe3e3;
+}
+
+/* Bottom text section with red X marks */
+.pli_bottom-text ul,
+.pli_pink-text ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.pli_bottom-text li,
+.pli_pink-text li {
+    padding-left: 32px;
+    color: #a60003;
+    background-image: url(../images/Vector_7.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    list-style: none;
+    font-weight: 600;
+    font-family: Nunito, sans-serif;
+}
+
+/* Mobile responsive styles */
+@media only screen and (max-width: 678px) {
+    .pli_flex {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .product_judge-container.top_padding {
+        margin-bottom: 24px;
+    }
+
+    .pli_top-text *,
+    .pli_pink-text *,
+    .pli_bottom-text * {
+        font-size: 16px;
+    }
+
+    .pli_pink-text {
+        margin: 12px 0;
+    }
+
+    .product-section_title {
+        font-size: 24px;
+    }
+
+    .product_judge-outer.pli_outer {
+        padding: 32px 0;
+    }
+}

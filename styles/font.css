@@ -1,0 +1,70 @@
+/* Google Fonts Import */
+@import url('https://fonts.cdnfonts.com/css/nunito');
+
+/* Font Face Declarations */
+
+/* Montserrat - Regular (400) */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat_n4.81949fa0ac9fd2021e16436151e8eaa539321637.woff2') format('woff2'),
+        url('../fonts/montserrat_n4.a6c632ca7b62da89c3594789ba828388aac693fe.woff') format('woff');
+    font-display: swap;
+}
+
+/* Montserrat - Italic (400) */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/montserrat_i4.5a4ea298b4789e064f62a29aafc18d41f09ae59b.woff2') format('woff2'),
+        url('../fonts/montserrat_i4.072b5869c5e0ed5b9d2021e4c2af132e16681ad2.woff') format('woff');
+    font-display: swap;
+}
+
+/* Montserrat - Bold (700) */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat_n7.3c434e22befd5c18a6b4afadb1e3d77c128c7939.woff2') format('woff2'),
+        url('../fonts/montserrat_n7.5d9fa6e2cae713c8fb539a9876489d86207fe957.woff') format('woff');
+    font-display: swap;
+}
+
+/* Montserrat - Bold Italic (700) */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/montserrat_i7.a0d4a463df4f146567d871890ffb3c80408e7732.woff2') format('woff2'),
+        url('../fonts/montserrat_i7.f6ec9f2a0681acc6f8152c40921d2a4d2e1a2c78.woff') format('woff');
+    font-display: swap;
+}
+
+/* Trirong - Regular (400) */
+@font-face {
+    font-family: 'Trirong';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/trirong_n4.46b40419aaa69bf77077c3108d75dad5a0318d4b.woff2') format('woff2'),
+        url('../fonts/trirong_n4.97753898e63cd7e164ad614681eba2c7fe577190.woff') format('woff');
+    font-display: swap;
+}
+
+/* Slick Icon Font (for carousel/slider icons) */
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/slick.woff') format('woff'),
+        url('../fonts/slick.ttf') format('truetype');
+}
+
+/* Font Utility Classes */
+.font-nunito {
+    font-family: Nunito, sans-serif;
+}

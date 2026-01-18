@@ -1,0 +1,127 @@
+/* Product Selector Component Styles */
+
+.product-selector {
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #f3eee0 !important;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Product Option */
+.product-option {
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid #f7a0a0;
+}
+
+/* Radio Button */
+.radio-button {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f7a0a0;
+}
+
+.radio-button__indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #f7a0a0;
+    display: none;
+}
+
+/* Show indicator when parent option is active */
+.product-option.active .radio-button__indicator {
+    display: block;
+}
+
+/* Option Header */
+.product-option__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.product-option__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+.product-option__info {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.3em;
+}
+
+.product-option__price {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.product-option__compare {
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
+    display: block;
+}
+
+/* Sale Badge (New Year Sale SVG) */
+.product-option__sale-badge {
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    z-index: 1;
+}
+
+/* Perks Section */
+.product-option__perks {
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.perk-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f7a0a0;
+    padding: 4px 8px;
+    border-bottom: 1px solid white;
+    opacity: 0.6;
+    transition: opacity 200ms ease;
+}
+
+.perk-badge:last-child {
+    border-bottom: none;
+}
+
+/* Full opacity when option is active */
+.product-option.active .perk-badge {
+    opacity: 1;
+}
+
+.perk-badge p {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1em;
+}
+
+/* Hover effect */
+.product-option:hover {
+    border-color: #d5416e;
+}

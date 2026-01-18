@@ -1,0 +1,52 @@
+/* Placeholder Sections Component Styles */
+
+.placeholder-section {
+    margin: 0;
+}
+
+.placeholder-section__title {
+    padding: 20px;
+    color: white;
+}
+
+/* Individual Section Styles */
+.bloating-section {
+    background-color: #ec4899;
+    height: 1594px;
+}
+
+.info-section {
+    background-color: #f59e0b;
+    height: 593px;
+}
+
+.info2-section {
+    background-color: #10b981;
+    height: 630px;
+}
+
+.nothing-section {
+    background-color: #06b6d4;
+    height: 1112px;
+}
+
+.ingredients-section {
+    background-color: #ef4444;
+    height: 1345px;
+}
+
+
+.icons-section {
+    background-color: #84cc16;
+    height: 190px;
+}
+
+.expert-section {
+    background-color: #f97316;
+    height: 728px;
+}
+
+.ugc-section {
+    background-color: #a855f7;
+    height: 913px;
+}

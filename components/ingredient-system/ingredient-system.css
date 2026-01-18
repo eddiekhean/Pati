@@ -1,0 +1,186 @@
+/* 8-Ingredient System Component Styles */
+
+/* Desktop display - hide mobile elements */
+@media only screen and (min-width: 679px) {
+    .product_lymphg-ingr-outer .Mobile_only {
+        display: none !important;
+    }
+}
+
+/* Mobile display - hide desktop elements */
+@media only screen and (max-width: 678px) {
+    .product_lymphg-ingr-outer .Desktop_only {
+        display: none !important;
+    }
+}
+
+/* Outer container */
+.product_judge-outer.product_lymphg-ingr-outer {
+    background: #f3eee0;
+    padding: 56px 0;
+}
+
+.product_judge-outer.product_lymphg-ingr-outer img {
+    width: 100%;
+}
+
+
+/* Container for centered content */
+.product_judge-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Section title */
+.product-section_title {
+    font-size: 32px;
+    line-height: 1.3em;
+    margin: 16px 0;
+    font-weight: 400;
+    font-family: Lora, serif;
+}
+
+.product-section_title span {
+    color: #d5416e;
+}
+
+/* Section text */
+.product-section_text {
+    font-size: 18px;
+    margin: 16px 0;
+    line-height: 1.3em;
+}
+
+/* Main ingredient table - 4 column grid */
+.product_lymph-ingr-table {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #fff;
+    border-radius: 12px;
+    border: 0.5px solid black;
+    overflow: hidden;
+}
+
+/* Individual ingredient card */
+.product-lymph-ingredient {
+    border: 0.5px solid black;
+    padding: 24px;
+    cursor: pointer;
+}
+
+/* Subtitle with green checkmark */
+.product_lymph-ingr-subtitle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    font-size: 16px;
+    color: #0c7c00;
+    margin: 0;
+}
+
+.product_lymph-ingr-subtitle img {
+    max-width: 16px;
+    display: block;
+}
+
+/* Main ingredient image */
+.product_lymph-main-img {
+    display: block;
+    max-width: 120px;
+    margin: 12px auto;
+    max-height: 80px;
+    width: auto !important;
+}
+
+/* Ingredient header (clickable thumb) */
+.product_lymph-ingr-thumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.product_lymph-ingr-thumb img {
+    max-width: 24px;
+    display: block;
+    margin-left: auto;
+}
+
+.product_lymph-ingr-thumb h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+/* Expandable content area */
+.product_lymph-ingr-content {
+    padding-top: 12px;
+    display: none;
+}
+
+.product_lymph-ingr-content p {
+    margin: 0;
+    line-height: 1.3em;
+    font-size: 14px;
+}
+
+/* Bottom divider images */
+.product_lymph-ingr-table-small {
+    max-width: 580px;
+    margin: 40px auto auto;
+}
+
+/* Mobile responsive styles */
+@media only screen and (max-width: 678px) {
+    .product-section_title {
+        font-size: 24px;
+    }
+
+    .product-section_text {
+        font-size: 16px;
+    }
+
+    .product_judge-outer.product_lymphg-ingr-outer {
+        padding: 32px 0;
+    }
+
+    /* Single column on mobile */
+    .product_lymph-ingr-table {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust thumb layout for mobile */
+    .product_lymph-ingr-thumb>div:nth-child(1) {
+        width: 20%;
+    }
+
+    .product_lymph-ingr-thumb>div:nth-child(2) {
+        width: 70%;
+    }
+
+    .product_lymph-ingr-thumb>div:nth-child(3) {
+        width: 10%;
+    }
+
+    /* Smaller image on mobile */
+    .product_judge-outer.product_lymphg-ingr-outer img.product_lymph-main-img {
+        margin: 0;
+        width: 100%;
+        max-width: 100px;
+    }
+
+    .product_lymph-ingr-thumb h5 {
+        font-size: 14px;
+    }
+
+    .product-lymph-ingredient {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,118 @@
+/* Consolidated Root Cause Component Styles */
+
+/* Layout & Container */
+.product_text-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.product_text-image>div {
+    width: 100%;
+}
+
+.product_text-image img {
+    width: 100%;
+}
+
+.product_text-image .btn_container {
+    max-width: 495px;
+}
+
+.product_text-image-reviews {
+    max-width: 350px;
+}
+
+/* Typography & Content */
+.product_textimage-content {
+    /* Commonly uses the same padding as expert-content or similar */
+    /* No specific rule found in grep for this class alone except nesting, so assuming inherit or standard block */
+}
+
+.product-section_title {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin: 16px 0;
+}
+
+.product-text p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 12px 0;
+    color: #333;
+}
+
+/* Button & Footer */
+.product_primary-btn {
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    padding: 18px 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    /* As found in sitewide.css */
+    border-radius: 4px;
+    font-size: 18px;
+    transition: all .2s;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.product_primary-btn:hover {
+    opacity: .7;
+}
+
+.product_primary-btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 16px 0 0;
+}
+
+.product_primary-btn-footer img {
+    width: 24px !important;
+}
+
+/* Responsive Utilities */
+@media only screen and (min-width: 679px) {
+    .Mobile_only {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    .Desktop_only {
+        display: none !important;
+    }
+
+    .product_text-image {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .product_text-image-reviews {
+        max-width: 250px;
+        margin: auto;
+        display: block;
+    }
+
+    .product-section_title {
+        font-size: 24px;
+    }
+
+    .product_primary-btn {
+        display: block;
+        padding: 16px;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        /* Often mobile buttons are full width */
+    }
+}

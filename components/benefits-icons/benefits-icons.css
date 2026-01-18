@@ -1,0 +1,58 @@
+/* Benefits Icons Component Styles */
+
+/* Outer container with pink background */
+.product_judge-outer.pink {
+    background: #fff7f8;
+    padding: 32px 0;
+}
+
+
+
+/* Icons grid - 4 columns */
+.product_icons-grid {
+    display: flex;
+    gap: 24px;
+}
+
+.product_icons-grid>div {
+    width: 100%;
+    text-align: center;
+}
+
+/* Icon images */
+.product_icons-grid img {
+    width: auto;
+    height: 40px;
+    max-width: 40px;
+    display: block;
+    margin: auto auto 16px;
+}
+
+/* Titles */
+.product_icons-grid p.h4title {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+/* Subtitle text */
+.product_icons-grid p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+/* Mobile responsive - 2x2 grid */
+@media only screen and (max-width: 678px) {
+    .product_icons-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product_icons-grid p.h4title {
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

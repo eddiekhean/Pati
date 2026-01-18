@@ -1,0 +1,129 @@
+/* UGC Videos Component - Note: Requires Slick Carousel for full functionality */
+.product_judge-outer.ugc-section {
+    background: #f3eee0;
+    padding: 56px 0;
+}
+
+.product_judge-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.Product-ugc-stars {
+    max-width: 300px;
+    margin: auto auto 16px;
+    display: block;
+}
+
+.product-section_title {
+    font-size: 32px;
+    line-height: 1.3em;
+    margin: 16px 0;
+    font-weight: 400;
+    font-family: Lora, serif;
+}
+
+.product-section_text {
+    font-size: 18px;
+    margin: 16px 0;
+    line-height: 1.3em;
+}
+
+.ugc-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.ugc-item {
+    flex: 1 1 0;
+    max-width: 276px;
+    max-height: 490.664px;
+    aspect-ratio: 276 / 490.664;
+    background: #eee;
+    /* demo */
+}
+
+.product_ugc-video {
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product_ugc-video img.product_ugc-play {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    z-index: 2;
+}
+
+.product_ugc-video video {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 9/16;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.btn_container {
+    margin-top: 32px;
+}
+
+.product_primary-btn {
+    font-family: Nunito, sans-serif;
+    display: inline-block;
+    padding: 18px 80px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: all 0.2s;
+    line-height: 1.3em;
+}
+
+.product_primary-btn:hover {
+    opacity: 0.7;
+}
+
+.product_primary-btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 1.3em;
+    margin: 16px 0 0;
+}
+
+.product_primary-btn-footer img {
+    width: 24px !important;
+}
+
+@media only screen and (max-width: 678px) {
+    .product_judge-outer.ugc-section {
+        padding: 32px 0;
+    }
+
+    .product-section_title {
+        font-size: 24px;
+    }
+
+    .product-section_text {
+        font-size: 16px;
+    }
+
+    .product_primary-btn {
+        display: block;
+        padding: 16px;
+        font-size: 16px;
+    }
+}
